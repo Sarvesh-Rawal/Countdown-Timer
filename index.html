@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Unlock&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>COUNTDOWN TIMER</h1>
+            <div class="user">
+                <div class="datediv">
+                    <form id="target_date">
+                        <label id="date">
+                            Date : <input type="number" placeholder="14">
+                        </label>
+                        <label id="month">
+                            Month : <input type="text" placeholder="oct">
+                        </label>
+                        <label id="year">
+                            Year : <input type="number" placeholder="2024">
+                        </label>
+                    </form>
+                </div>
+                <div class="timediv">
+                    <form id="time">
+                        <label id="hr">
+                            Hour : <input type="number" placeholder="00">
+                        </label>
+                        <label id="min">                    
+                            Min : <input type="number" placeholder="00">
+                        </label>
+                        <label id="sec">                    
+                            Sec : <input type="number" placeholder="00">
+                        </label>
+                    </form>
+                </div>
+                <button class="submit">SET COUNTDOWN</button>
+                <p class="note">NOTE* --> Enter time in 24 hour format</p>
+            </div>
+        <div id="timerdiv">
+            <div class="heading">
+                <div>Days</div>
+                <div>Hours</div>
+                <div>Minutes</div>
+                <div>Seconds</div>
+            </div>
+            <div id="timer">
+                <div class="days">00</div><p>:</p>         
+                <div class="hrs">00</div><p>:</p>
+                <div class="min">00</div><p>:</p>
+                <div class="sec">00</div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
